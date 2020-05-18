@@ -8,4 +8,11 @@ export default [
     },
     component: AsyncComponent(() => import('./index'))
   },
+  {
+    path: '/form',
+    meta: {
+      title: '体征数据'
+    },
+    component: AsyncComponent(() => import('./from'))
+  },
 ]

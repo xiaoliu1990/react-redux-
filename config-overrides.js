@@ -12,16 +12,16 @@ let serverUrl='', serverUrlWx='';
 
 switch (ENVIRONMENT){
   case 'start':
-    serverUrl='//xxx';//开发测试
-    serverUrlWx='xxx';
+    serverUrl='//xxx.com/';//开发测试
+    serverUrlWx='xxx.com';
   break;
   case 'build:dev':
-    serverUrl='//xxx';//测试打包
-    serverUrlWx='//xxx';
+    serverUrl='//xxx.com';//测试打包
+    serverUrlWx='//xxx.com';
   break;
   case 'build:pro':
     serverUrl='//xxx.com';//上线打包
-    serverUrlWx='xxx';
+    serverUrlWx='xxx.com';
   break;
 }
 

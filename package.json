@@ -13,6 +13,7 @@
     "css-loader": "^3.5.3",
     "customize-cra": "^0.9.1",
     "less-loader": "^6.1.0",
+    "moment": "^2.25.3",
     "postcss-pxtorem": "^5.1.1",
     "prop-types": "^15.7.2",
     "query-string": "^6.12.1",
@@ -22,6 +23,7 @@
     "react-redux": "^7.2.0",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"

@@ -5,13 +5,9 @@ import './rem';
 import 'style/css/init.css';
 import * as serviceWorker from './serviceWorker';
 
+//引入redux
 import { Provider } from 'react-redux';
-
-import { createStore, applyMiddleware } from 'redux'; 
-import thunk from 'redux-thunk';
-import reducers from "./redux/reducers";
-//生成store对象、内部会第一次调用reducer函数，得到初始state，异步模式
-let store = createStore(reducers, applyMiddleware(thunk));
+import store from './redux/store';
 
 ReactDOM.render(
   <Provider store = { store }>
