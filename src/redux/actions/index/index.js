@@ -59,6 +59,7 @@ const AddUa = (dataFrom) => {
 			console.log(message)
 		}
 		http('get', 'h5/listLatest?itemTypes=SP,HW,WHR,BP,BG,UA', params, success, fail);
+		//http('post', 'h5/saveData', params, success, fail);
 	};
 };
 

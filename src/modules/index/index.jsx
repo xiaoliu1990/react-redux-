@@ -21,9 +21,15 @@ class Index extends Component {
     let { indexhome } = this.props;
     if(indexhome.isUa){
       let appList=indexhome.dataList.map((item,index)=>{
+        let uaNo='', uaName='';
+        if(item.itemId==='UA'){
+          uaNo=item.items[0].itemValue;
+          uaName=item.items[0].itemName;
+        }
         return(
           <li key={index} className="app-list">
             {item.itemId}
+            {uaName} {uaNo}
           </li>
         )
       });
