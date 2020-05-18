@@ -1,5 +1,6 @@
 import { SELECT_LIST, ADD_UA } from 'reduxs/actionTypes/index/index';
-import {push} from 'react-router-redux';
+import {replace} from 'connected-react-router';
+import { history } from 'reduxs/store';
 import { Toast } from 'antd-mobile';
 import { http } from 'common/httpAjax';
 const SelectList = () => {
@@ -44,7 +45,8 @@ const AddUa = (dataFrom) => {
 		let success = (res) => {
 			if (res.code === 0) {
 				Toast.info('保存成功', 2,function(){
-					dispatch(push('/')); 
+					//dispatch(replace('/')); 
+					history.go(-1);
 					dispatch({
 						type: ADD_UA,
 						dataList:state.indexhome.dataList,

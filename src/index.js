@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ConnectedRouter } from 'connected-react-router';
 import App from './App';
 import './rem';
 import 'style/css/init.css';
@@ -7,11 +8,14 @@ import * as serviceWorker from './serviceWorker';
 
 //引入redux
 import { Provider } from 'react-redux';
-import store from './redux/store';
+import configureStore, { history } from './redux/store';
+const store = configureStore(); //提供初始状态（如有）
 
 ReactDOM.render(
   <Provider store = { store }>
-    <App />
+    <ConnectedRouter history={history}>
+      <App />
+    </ConnectedRouter>
   </Provider>,
   document.getElementById('root'));
 
