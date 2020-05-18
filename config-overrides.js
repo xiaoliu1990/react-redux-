@@ -12,16 +12,16 @@ let serverUrl='', serverUrlWx='';
 
 switch (ENVIRONMENT){
   case 'start':
-    serverUrl='//tk-api.ciyun.cn';//开发测试
-    serverUrlWx='centrinwx.ciyun.cn';
+    serverUrl='//xxx';//开发测试
+    serverUrlWx='xxx';
   break;
   case 'build:dev':
-    serverUrl='//tk-api.ciyun.cn';//测试打包
-    serverUrlWx='//centrinwx.ciyun.cn';
+    serverUrl='//xxx';//测试打包
+    serverUrlWx='//xxx';
   break;
   case 'build:pro':
-    serverUrl='//api.ehmuat.pension.taikang.com';//上线打包
-    serverUrlWx='centrinwx.ciyun.cn';
+    serverUrl='//xxx.com';//上线打包
+    serverUrlWx='xxx';
   break;
 }
 
